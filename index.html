@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShoeCloud | 云鞋库 - 智能跑鞋管理平台</title>
-    <!-- 引入独立的样式文件 -->
     <link rel="stylesheet" href="style.css">
-    <!-- 引入图标字体 (用于简单的装饰性图标) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- 引入优雅的字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
@@ -17,18 +14,17 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <!-- 简化的Logo：一个圆角方形背景 + 文字 -->
                 <div class="logo-icon">S</div>
                 <span>ShoeCloud</span>
             </a>
             <div class="nav-links">
-                <a href="#vision" data-i18n="vision">愿景</a>
-                <a href="#core" data-i18n="core">核心</a>
-                <a href="#tech" data-i18n="tech">技术</a>
-                <a href="#future" data-i18n="future">生态</a>
-                <a href="privacy-bilingual.html" data-i18n="privacy">隐私</a>
+                <a href="#vision" data-i18n="nav.vision">愿景</a>
+                <a href="#core" data-i18n="nav.core">核心</a>
+                <a href="#tech" data-i18n="nav.tech">技术</a>
+                <a href="#future" data-i18n="nav.future">生态</a>
+                <a href="privacy.html" data-i18n="nav.privacy">隐私</a>
+                <button id="lang-toggle" class="lang-btn">EN</button>
             </div>
-            <!-- 语言切换器将通过JS动态添加 -->
         </div>
     </nav>
 
@@ -36,44 +32,44 @@
     <header class="hero">
         <div class="container hero-container">
             <div class="hero-text">
-                <h1 data-i18n="heroTitle">重新定义<span class="highlight">跑鞋管理</span></h1>
-                <h2 data-i18n="heroSubtitle">从"碰一碰"自动同步，到真实可信的评价社区</h2>
-                <p data-i18n="heroDescription">ShoeCloud（云鞋库）是一款基于Flutter开发的智能应用。我们通过创新的交互与严谨的技术架构，旨在解决跑者记录跑鞋里程繁琐、装备数据分散的核心痛点，并以此为基础构建一个无广告、纯真实的跑鞋评价生态系统。</p>
+                <h1 data-i18n="hero.title">重新定义<span class="highlight">跑鞋管理</span></h1>
+                <h2 data-i18n="hero.subtitle">从“碰一碰”自动同步，到真实可信的评价社区</h2>
+                <p data-i18n="hero.desc">ShoeCloud（云鞋库）是一款基于Flutter开发的智能应用。我们通过创新的交互与严谨的技术架构，旨在解决跑者记录跑鞋里程繁琐、装备数据分散的核心痛点，并以此为基础构建一个无广告、纯真实的跑鞋评价生态系统。</p>
                 <div class="hero-cta">
-                    <span class="status-badge" data-i18n="devStatus"><i class="fas fa-code-branch"></i> 核心功能开发进行中</span>
-                    <span class="status-badge" data-i18n="userCoverage"><i class="fas fa-users"></i> 已覆盖佳明、高驰核心用户</span>
+                    <span class="status-badge"><i class="fas fa-code"></i> <span data-i18n="hero.status1">核心功能开发进行中</span></span>
+                    <span class="status-badge"><i class="fas fa-users"></i> <span data-i18n="hero.status2">已覆盖佳明、高驰核心用户</span></span>
                 </div>
             </div>
             <div class="hero-visual">
-                <!-- 一个简约的、代表App核心概念的图形 -->
                 <div class="visual-concept">
                     <div class="phone-outline">
                         <div class="screen">
-                            <div class="app-icon"></div>
-                            <div class="wave-line"></div>
-                            <div class="shoe-icon"></div>
-                        </div>
+                        <div class="app-icon"></div>
+                        <div class="wave-line"></div>
+                        <div class="shoe-icon"></div>
                     </div>
                 </div>
             </div>
+        </div>
+
         </div>
     </header>
 
     <!-- 愿景与问题 -->
     <section id="vision" class="section">
         <div class="container">
-            <h2 class="section-title" data-i18n="visionTitle">我们解决的<span class="highlight">真实问题</span></h2>
-            <p class="section-subtitle" data-i18n="visionSubtitle">超过60%的跑者因记录麻烦而放弃追踪跑鞋里程，导致无法科学判断更换时机，增加受伤风险。</p>
+            <h2 class="section-title" data-i18n="vision.title">我们解决的<span class="highlight">真实问题</span></h2>
+            <p class="section-subtitle" data-i18n="vision.subtitle">超过60%的跑者因记录麻烦而放弃追踪跑鞋里程，导致无法科学判断更换时机，增加受伤风险。</p>
             
             <div class="content-card">
-                <h3><i class="fas fa-exclamation-circle highlight"></i> <span data-i18n="currentProblem">当前困境</span></h3>
-                <p data-i18n="problemContent">跑者的运动数据被困在Garmin、COROS、华为健康等多个"数据孤岛"中，与具体的装备（跑鞋）完全割裂。手动记录反人类，导致宝贵的装备磨损数据白白流失。</p>
+                <h3><i class="fas fa-exclamation-circle highlight"></i> <span data-i18n="vision.current">当前困境</span></h3>
+                <p data-i18n="vision.currentDesc">跑者的运动数据被困在Garmin、COROS、华为健康等多个“数据孤岛”中，与具体的装备（跑鞋）完全割裂。手动记录反人类，导致宝贵的装备磨损数据白白流失。</p>
                 
-                <h3><i class="fas fa-bullseye highlight"></i> <span data-i18n="ourMission">我们的使命</span></h3>
-                <p data-i18n="missionContent">ShoeCloud 的使命是成为连接 "运动数据" 与 "装备实体" 的智能桥梁。我们不仅让记录变得无比简单，更让这些聚合起来的数据产生新的价值——为个人提供科学指导，为社区提供真实参考。</p>
+                <h3><i class="fas fa-bullseye highlight"></i> <span data-i18n="vision.mission">我们的使命</span></h3>
+                <p data-i18n="vision.missionDesc">ShoeCloud 的使命是成为连接 <strong>“运动数据”</strong> 与 <strong>“装备实体”</strong> 的智能桥梁。我们不仅让记录变得无比简单，更让这些聚合起来的数据产生新的价值——为个人提供科学指导，为社区提供真实参考。</p>
                 
                 <div class="insight-box">
-                    <p><strong data-i18n="researchInsight">调研洞察：</strong><span data-i18n="insightContent">在70名核心跑者的调研中，81.4% 对ShoeCloud的概念表示高度兴趣；54.29% 的跑者拥有4双以上跑鞋，存在明确的管理需求。</span></p>
+                    <p data-i18n="vision.insight"><strong>调研洞察：</strong>在70名核心跑者的调研中，<span class="highlight">81.4%</span> 对ShoeCloud的概念表示高度兴趣；<span class="highlight">54.29%</span> 的跑者拥有4双以上跑鞋，存在明确的管理需求。</p>
                 </div>
             </div>
         </div>
@@ -82,30 +78,30 @@
     <!-- 核心功能架构 -->
     <section id="core" class="section bg-light">
         <div class="container">
-            <h2 class="section-title" data-i18n="coreTitle">核心<span class="highlight">功能架构</span></h2>
-            <p class="section-subtitle" data-i18n="coreSubtitle">一个由简入繁、层层递进的产品体系</p>
+            <h2 class="section-title" data-i18n="core.title">核心<span class="highlight">功能架构</span></h2>
+            <p class="section-subtitle" data-i18n="core.subtitle">一个由简入繁、层层递进的产品体系</p>
             
             <div class="content-card">
-                <h3><i class="fas fa-layer-group highlight"></i> <span data-i18n="layer1">第一层：自动化数据基石</span></h3>
-                <p data-i18n="layer1Content">一切始于"碰一碰"同步。无论是通过NFC芯片还是软件模拟，目标都是让用户以最自然的方式，在跑步结束后更加方便的完成"本次跑步-这双鞋"的关联。数据自动从Garmin、COROS等平台同步，里程自动累加。</p>
+                <h3><i class="fas fa-layer-group highlight"></i> <span data-i18n="core.layer1">第一层：自动化数据基石</span></h3>
+                <p data-i18n="core.layer1Desc">一切始于“碰一碰”同步。无论是通过NFC芯片还是软件模拟，目标都是让用户以最自然的方式，在跑步结束后更加方便的完成“本次跑步-这双鞋”的关联。数据自动从Garmin、COROS等平台同步，里程自动累加。</p>
                 
-                <h3><i class="fas fa-chess-board highlight"></i> <span data-i18n="layer2">第二层：个人智能管理</span></h3>
-                <p data-i18n="layer2Content">基于准确的里程数据，为每双鞋建立"电子档案"。核心功能包括：</p>
+                <h3><i class="fas fa-chess-board highlight"></i> <span data-i18n="core.layer2">第二层：个人智能管理</span></h3>
+                <p data-i18n="core.layer2Desc">基于准确的里程数据，为每双鞋建立“电子档案”。核心功能包括：</p>
                 <ul class="feature-list">
-                    <li data-i18n="feature1"><strong>寿命预测：</strong>结合官方数据、用户体重、跑步路面等因素的智能算法模型。</li>
-                    <li data-i18n="feature2"><strong>成本分析：</strong>直观展示"每公里成本"，让装备投入一目了然。</li>
-                    <li data-i18n="feature3"><strong>跑鞋日记：</strong>为每一双战靴记录难忘的时刻与赛场回忆。</li>
-                    <li data-i18n="feature4"><strong>履历报告：</strong>生成可视化、可分享的精美报告。</li>
-                    <li data-i18n="feature5"><strong>更多功能尚待开发...</strong></li>
+                    <li data-i18n="core.features1"><strong>寿命预测：</strong>结合官方数据、用户体重、跑步路面等因素的智能算法模型。</li>
+                    <li data-i18n="core.features2"><strong>成本分析：</strong>直观展示“每公里成本”，让装备投入一目了然。</li>
+                    <li data-i18n="core.features3"><strong>跑鞋日记：</strong>为每一双战靴记录难忘的时刻与赛场回忆。</li>
+                    <li data-i18n="core.features4"><strong>履历报告：</strong>生成可视化、可分享的精美报告。</li>
+                    <li data-i18n="core.features5"><strong>更多功能尚待开发...</strong></li>
                 </ul>
                 
-                <h3><i class="fas fa-network-wired highlight"></i> <span data-i18n="layer3">第三层：社区评价生态</span></h3>
-                <p data-i18n="layer3Content">这是ShoeCloud的灵魂。只有当用户真实跑过一定里程（如50公里）后，才能为这双鞋的关键指标（中底反馈、鞋面包裹、大底耐磨等）进行评价。</p>
-                <p><strong data-i18n="coreMechanism">核心机制保障真实：</strong></p>
+                <h3><i class="fas fa-network-wired highlight"></i> <span data-i18n="core.layer3">第三层：社区评价生态</span></h3>
+                <p data-i18n="core.layer3Desc">这是ShoeCloud的灵魂。只有当用户真实跑过一定里程（如50公里）后，才能为这双鞋的关键指标（中底反馈、鞋面包裹、大底耐磨等）进行评价。</p>
+                <p data-i18n="core.authenticity"><strong>核心机制保障真实：</strong></p>
                 <ul class="feature-list">
-                    <li data-i18n="mechanism1"><strong>防刷机制：</strong>评价资格与同步的跑步数据严格绑定。</li>
-                    <li data-i18n="mechanism2"><strong>标签筛选：</strong>评价可按"跑者体重"、"跑者成绩"、"足弓类型"、"使用场景"等多维度筛选，实现极致精准的参考。</li>
-                    <li data-i18n="mechanism3"><strong>无广告环境：</strong>打造一个纯粹为跑者服务的决策平台。</li>
+                    <li data-i18n="core.antiCheat1"><strong>防刷机制：</strong>评价资格与同步的跑步数据严格绑定。</li>
+                    <li data-i18n="core.antiCheat2"><strong>标签筛选：</strong>评价可按“跑者体重”、“跑者成绩”、“足弓类型”、“使用场景”等多维度筛选，实现极致精准的参考。</li>
+                    <li data-i18n="core.antiCheat3"><strong>无广告环境：</strong>打造一个纯粹为跑者服务的决策平台。</li>
                 </ul>
             </div>
         </div>
@@ -114,33 +110,33 @@
     <!-- 技术实现 -->
     <section id="tech" class="section">
         <div class="container">
-            <h2 class="section-title" data-i18n="techTitle">技术<span class="highlight">实现</span></h2>
-            <p class="section-subtitle" data-i18n="techSubtitle">坚实、现代且合规的技术栈是体验的保障</p>
+            <h2 class="section-title" data-i18n="tech.title">技术<span class="highlight">实现</span></h2>
+            <p class="section-subtitle" data-i18n="tech.subtitle">坚实、现代且合规的技术栈是体验的保障</p>
             
             <div class="content-card">
                 <div class="tech-stack">
                     <div class="tech-item">
                         <div class="tech-icon">📱</div>
-                        <h4 data-i18n="techFlutter">Flutter & Dart</h4>
-                        <p data-i18n="techFlutterDesc">跨平台移动端开发框架，保障iOS/Android双端原生级体验与高性能渲染。</p>
+                        <h4 data-i18n="tech.flutter">Flutter & Dart</h4>
+                        <p data-i18n="tech.flutterDesc">跨平台移动端开发框架，保障iOS/Android双端原生级体验与高性能渲染。</p>
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon">⚙️</div>
-                        <h4 data-i18n="techPython">Python后端</h4>
-                        <p data-i18n="techPythonDesc">负责数据处理、API代理、智能预测模型，运行于稳定的云服务器。</p>
+                        <h4 data-i18n="tech.python">Python后端</h4>
+                        <p data-i18n="tech.pythonDesc">负责数据处理、API代理、智能预测模型，运行于稳定的云服务器。</p>
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon">🔐</div>
-                        <h4 data-i18n="techAPI">官方API集成</h4>
-                        <p data-i18n="techAPIDesc">已正式申请并集成 <strong>Garmin Connect API</strong> 与 <strong>COROS Open API</strong>，覆盖超70%的核心跑者用户，数据同步安全、合规、稳定。其他平台如<strong>华为</strong>、<strong>苹果</strong>等，会在后续开发中逐步跟进</p>
+                        <h4 data-i18n="tech.api">官方API集成</h4>
+                        <p data-i18n="tech.apiDesc">已正式申请并集成 <strong>Garmin Connect API</strong> 与 <strong>COROS Open API</strong>，覆盖超70%的核心跑者用户，数据同步安全、合规、稳定。其他平台如<strong>华为</strong>、<strong>苹果</strong>等，会在后续开发中逐步跟进</p>
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon">🗄️</div>
-                        <h4 data-i18n="techDB">云数据库</h4>
-                        <p data-i18n="techDBDesc">采用关系型数据库进行结构化存储，确保用户数据安全与查询效率。</p>
+                        <h4 data-i18n="tech.db">云数据库</h4>
+                        <p data-i18n="tech.dbDesc">采用关系型数据库进行结构化存储，确保用户数据安全与查询效率。</p>
                     </div>
                 </div>
-                <p class="tech-note" data-i18n="techNote"><i class="fas fa-info-circle"></i> 技术选型遵循"稳健第一，效率优先"的原则，为产品的长期迭代打下坚实基础。</p>
+                <p class="tech-note"><i class="fas fa-info-circle"></i> <span data-i18n="tech.note">技术选型遵循“稳健第一，效率优先”的原则，为产品的长期迭代打下坚实基础。</span></p>
             </div>
         </div>
     </section>
@@ -148,30 +144,30 @@
     <!-- 未来生态展望 -->
     <section id="future" class="section bg-light">
         <div class="container">
-            <h2 class="section-title" data-i18n="futureTitle">生态<span class="highlight">展望</span></h2>
-            <p class="section-subtitle" data-i18n="futureSubtitle">一个由可信数据驱动的、充满可能性的未来</p>
+            <h2 class="section-title" data-i18n="future.title">生态<span class="highlight">展望</span></h2>
+            <p class="section-subtitle" data-i18n="future.subtitle">一个由可信数据驱动的、充满可能性的未来</p>
             
             <div class="content-card">
-                <p data-i18n="futureIntro">ShoeCloud的愿景不止于一个工具。当平台上积累了大量真实、结构化的"跑鞋-跑步者-环境"数据后，将自然生长出丰富的生态：</p>
+                <p data-i18n="future.desc">ShoeCloud的愿景不止于一个工具。当平台上积累了大量真实、结构化的“跑鞋-跑步者-环境”数据后，将自然生长出丰富的生态：</p>
                 
                 <div class="ecosystem-grid">
                     <div class="eco-item">
-                        <h4><i class="fas fa-map-signs"></i> <span data-i18n="eco1Title">装备发现</span></h4>
-                        <p data-i18n="eco1Desc">"寻找和我体重、配速相似，且跑过相同马拉松的跑者都在穿什么鞋？"——更个性化的装备发现体验。</p>
+                        <h4><i class="fas fa-map-signs"></i> <span data-i18n="future.ecosystem1">装备发现</span></h4>
+                        <p data-i18n="future.ecosystem1Desc">“寻找和我体重、配速相似，且跑过相同马拉松的跑者都在穿什么鞋？”——更个性化的装备发现体验。</p>
                     </div>
                     <div class="eco-item">
-                        <h4><i class="fas fa-user-friends"></i> <span data-i18n="eco2Title">跑步社群</span></h4>
-                        <p data-i18n="eco2Desc">组建属于自己的社群，邀请朋友加入，看看身边的大家都在穿什么跑鞋，看看他又和他的跑鞋发生了什么故事。</p>
+                        <h4><i class="fas fa-user-friends"></i> <span data-i18n="future.ecosystem2">跑步社群</span></h4>
+                        <p data-i18n="future.ecosystem2Desc">组建属于自己的社群，邀请朋友加入，看看身边的大家都在穿什么跑鞋，看看他又和他的跑鞋发生了什么故事。</p>
                     </div>
                     <div class="eco-item">
-                        <h4><i class="fas fa-chart-line"></i> <span data-i18n="eco3Title">行业洞察</span></h4>
-                        <p data-i18n="eco3Desc">匿名化的宏观数据，可为跑鞋制造商、零售商提供真实的市场反馈与产品迭代方向。</p>
+                        <h4><i class="fas fa-chart-line"></i> <span data-i18n="future.ecosystem3">行业洞察</span></h4>
+                        <p data-i18n="future.ecosystem3Desc">匿名化的宏观数据，可为跑鞋制造商、零售商提供真实的市场反馈与产品迭代方向。</p>
                     </div>
                 </div>
                 
                 <div class="conclusion-box">
-                    <h4><i class="fas fa-flag-checkered"></i> <span data-i18n="conclusionTitle">我们的道路</span></h4>
-                    <p data-i18n="conclusionContent">ShoeCloud将坚定不移地沿着"<strong>解决基础痛点 -> 提供个人价值 -> 构建社区生态</strong>"的路径前进。每一步都力求扎实，每一次迭代都围绕"真实"与"信任"展开。</p>
+                    <h4><i class="fas fa-flag-checkered"></i> <span data-i18n="future.road">我们的道路</span></h4>
+                    <p data-i18n="future.roadDesc">ShoeCloud将坚定不移地沿着“<strong>解决基础痛点 -> 提供个人价值 -> 构建社区生态</strong>”的路径前进。每一步都力求扎实，每一次迭代都围绕“真实”与“信任”展开。</p>
                 </div>
             </div>
         </div>
@@ -184,23 +180,224 @@
                 <div class="footer-logo">
                     <div class="logo-icon">S</div>
                     <div>
-                        <h4>ShoeCloud · 云鞋库</h4>
-                        <p data-i18n="footerSlogan">数据驱动，科学奔跑。</p>
+                        <h4>ShoeCloud</h4>
+                        <p data-i18n="footer.slogan">数据驱动，科学奔跑</p>
                     </div>
                 </div>
                 <div class="footer-links">
-                    <a href="privacy-bilingual.html" data-i18n="privacyPolicy"><i class="fas fa-shield-alt"></i> 隐私政策</a>
-                    <a href="https://github.com/wtx1717/ShoeCloud" target="_blank" data-i18n="github"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="13100162717@163.com" data-i18n="contact"><i class="fas fa-envelope"></i> 联系</a>
+                    <a href="#vision" data-i18n="footer.vision">愿景</a>
+                    <a href="#core" data-i18n="footer.core">核心功能</a>
+                    <a href="#tech" data-i18n="footer.tech">技术架构</a>
+                    <a href="privacy.html" data-i18n="footer.privacy">隐私政策</a>
+                    <a href="https://github.com/wtx1717/ShoeCloud" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="13100162717@163.com"><i class="fas fa-envelope"></i> <span data-i18n="footer.contact">联系</span></a>
                 </div>
             </div>
-            <p class="footer-copyright" data-i18n="copyright">© 2025 ShoeCloud Project. 本页面为项目介绍页，产品正在积极开发中。</p>
+            <p class="footer-copyright" data-i18n="footer.copyright">© 2025 ShoeCloud Project. 本页面为项目介绍页，产品正在积极开发中。</p>
         </div>
     </footer>
 
-    <!-- 引入语言切换功能 -->
-    <script src="i18n.js"></script>
-    <script src="language-switcher.js"></script>
+    <script>
+        // 语言包
+        const translations = {
+            en: {
+                nav: {
+                    vision: "Vision",
+                    core: "Core",
+                    tech: "Technology",
+                    future: "Ecosystem",
+                    privacy: "Privacy"
+                },
+                hero: {
+                    title: "Redefining <span class='highlight'>Running Shoe Management</span>",
+                    subtitle: "From 'tap-to-sync' to a trustworthy review community",
+                    desc: "ShoeCloud is an intelligent app developed with Flutter. Through innovative interaction and rigorous technical architecture, we aim to solve the core pain points of runners struggling with cumbersome shoe mileage tracking and scattered equipment data, and build an ad-free, authentic running shoe review ecosystem based on this.",
+                    status1: "Core functions in development",
+                    status2: "Covers core Garmin and COROS users"
+                },
+                vision: {
+                    title: "The <span class='highlight'>real problems</span> we solve",
+                    subtitle: "Over 60% of runners give up tracking shoe mileage due to cumbersome recording, leading to inability to scientifically judge replacement timing and increased injury risk.",
+                    current: "Current Dilemma",
+                    currentDesc: "Runners' sports data is trapped in multiple 'data silos' such as Garmin, COROS, and Huawei Health, completely separated from specific equipment (running shoes). Manual recording is counterintuitive, resulting in the loss of valuable equipment wear data.",
+                    mission: "Our Mission",
+                    missionDesc: "ShoeCloud's mission is to be the intelligent bridge connecting <strong>'sports data'</strong> and <strong>'equipment entities'</strong>. We not only make recording extremely simple, but also make these aggregated data generate new value - providing scientific guidance for individuals and real references for the community.",
+                    insight: "<strong>Research Insight:</strong> In a survey of 70 core runners, <span class='highlight'>81.4%</span> expressed high interest in the ShoeCloud concept; <span class='highlight'>54.29%</span> of runners own 4 or more pairs of running shoes, indicating clear management needs."
+                },
+                core: {
+                    title: "Core <span class='highlight'>Function Architecture</span>",
+                    subtitle: "A product system that progresses from simplicity to complexity",
+                    layer1: "Layer 1: Automated Data Foundation",
+                    layer1Desc: "Everything starts with 'tap-to-sync'. Whether through NFC chips or software simulation, the goal is to allow users to conveniently associate 'this run - this pair of shoes' in the most natural way after running. Data is automatically synced from platforms like Garmin and COROS, and mileage is automatically accumulated.",
+                    layer2: "Layer 2: Personalized Intelligent Management",
+                    layer2Desc: "Based on accurate mileage data, establish an 'electronic file' for each pair of shoes. Core functions include:",
+                    features1: "<strong>Lifespan Prediction:</strong> An intelligent algorithm model that combines official data, user weight, running surface and other factors.",
+                    features2: "<strong>Cost Analysis:</strong> Intuitively display 'cost per kilometer' to make equipment investment clear at a glance.",
+                    features3: "<strong>Shoe Diary:</strong> Record memorable moments and race memories with each pair of running shoes.",
+                    features4: "<strong>Resume Report:</strong> Generate visual, shareable and exquisite reports.",
+                    features5: "<strong>More features to be developed...</strong>",
+                    layer3: "Layer 3: Community Review Ecosystem",
+                    layer3Desc: "This is the soul of ShoeCloud. Users can only evaluate key indicators of a shoe (midsole feedback, upper fit, outsole durability, etc.) after actually running a certain mileage (e.g., 50km).",
+                    authenticity: "<strong>Core mechanisms to ensure authenticity:</strong>",
+                    antiCheat1: "<strong>Anti-brushing mechanism:</strong> Evaluation eligibility is strictly tied to synced running data.",
+                    antiCheat2: "<strong>Tag filtering:</strong> Reviews can be filtered by multiple dimensions such as 'runner weight', 'runner performance', 'arch type', 'usage scenario', achieving extremely precise references.",
+                    antiCheat3: "<strong>Ad-free environment:</strong> Create a pure decision-making platform for runners."
+                },
+                tech: {
+                    title: "Technical <span class='highlight'>Implementation</span>",
+                    subtitle: "A solid, modern and compliant technology stack is the guarantee of experience",
+                    flutter: "Flutter & Dart",
+                    flutterDesc: "Cross-platform mobile development framework, ensuring native-level experience and high-performance rendering on both iOS and Android.",
+                    python: "Python Backend",
+                    pythonDesc: "Responsible for data processing, API proxy, intelligent prediction models, running on stable cloud servers.",
+                    api: "Official API Integration",
+                    apiDesc: "Officially applied for and integrated <strong>Garmin Connect API</strong> and <strong>COROS Open API</strong>, covering over 70% of core runner users, with safe, compliant and stable data synchronization. Other platforms such as <strong>Huawei</strong> and <strong>Apple</strong> will be followed up in subsequent development.",
+                    db: "Cloud Database",
+                    dbDesc: "Relational database for structured storage, ensuring user data security and query efficiency.",
+                    note: "Technology selection follows the principle of 'stability first, efficiency first', laying a solid foundation for long-term product iteration."
+                },
+                future: {
+                    title: "Ecosystem <span class='highlight'>Outlook</span>",
+                    subtitle: "A promising future driven by trustworthy data",
+                    desc: "ShoeCloud's vision goes beyond being a tool. When a large amount of real, structured 'shoe-runner-environment' data accumulates on the platform, a rich ecosystem will naturally grow:",
+                    ecosystem1: "Equipment Discovery",
+                    ecosystem1Desc: "'Find out what shoes runners with similar weight, pace, and who have run the same marathon are wearing?' - A more personalized equipment discovery experience.",
+                    ecosystem2: "Running Community",
+                    ecosystem2Desc: "Build your own community, invite friends to join, see what running shoes everyone around you is wearing, and discover the stories between them and their shoes.",
+                    ecosystem3: "Industry Insights",
+                    ecosystem3Desc: "Anonymized macro data can provide real market feedback and product iteration directions for running shoe manufacturers and retailers.",
+                    road: "Our Road",
+                    roadDesc: "ShoeCloud will unswervingly follow the path of '<strong>solving basic pain points -> providing personal value -> building community ecology</strong>'. Every step strives to be solid, and every iteration revolves around 'authenticity' and 'trust'."
+                },
+                footer: {
+                    slogan: "Data-driven, scientific running",
+                    vision: "Vision",
+                    core: "Core Functions",
+                    tech: "Technical Architecture",
+                    privacy: "Privacy Policy",
+                    contact: "Contact",
+                    copyright: "© 2025 ShoeCloud Project. This page is a project introduction, and the product is under active development."
+                }
+            },
+            zh: {
+                nav: {
+                    vision: "愿景",
+                    core: "核心",
+                    tech: "技术",
+                    future: "生态",
+                    privacy: "隐私"
+                },
+                hero: {
+                    title: "重新定义<span class='highlight'>跑鞋管理</span>",
+                    subtitle: "从“碰一碰”自动同步，到真实可信的评价社区",
+                    desc: "ShoeCloud（云鞋库）是一款基于Flutter开发的智能应用。我们通过创新的交互与严谨的技术架构，旨在解决跑者记录跑鞋里程繁琐、装备数据分散的核心痛点，并以此为基础构建一个无广告、纯真实的跑鞋评价生态系统。",
+                    status1: "核心功能开发进行中",
+                    status2: "已覆盖佳明、高驰核心用户"
+                },
+                vision: {
+                    title: "我们解决的<span class='highlight'>真实问题</span>",
+                    subtitle: "超过60%的跑者因记录麻烦而放弃追踪跑鞋里程，导致无法科学判断更换时机，增加受伤风险。",
+                    current: "当前困境",
+                    currentDesc: "跑者的运动数据被困在Garmin、COROS、华为健康等多个“数据孤岛”中，与具体的装备（跑鞋）完全割裂。手动记录反人类，导致宝贵的装备磨损数据白白流失。",
+                    mission: "我们的使命",
+                    missionDesc: "ShoeCloud 的使命是成为连接 <strong>“运动数据”</strong> 与 <strong>“装备实体”</strong> 的智能桥梁。我们不仅让记录变得无比简单，更让这些聚合起来的数据产生新的价值——为个人提供科学指导，为社区提供真实参考。",
+                    insight: "<strong>调研洞察：</strong>在70名核心跑者的调研中，<span class='highlight'>81.4%</span> 对ShoeCloud的概念表示高度兴趣；<span class='highlight'>54.29%</span> 的跑者拥有4双以上跑鞋，存在明确的管理需求。"
+                },
+                core: {
+                    title: "核心<span class='highlight'>功能架构</span>",
+                    subtitle: "一个由简入繁、层层递进的产品体系",
+                    layer1: "第一层：自动化数据基石",
+                    layer1Desc: "一切始于“碰一碰”同步。无论是通过NFC芯片还是软件模拟，目标都是让用户以最自然的方式，在跑步结束后更加方便的完成“本次跑步-这双鞋”的关联。数据自动从Garmin、COROS等平台同步，里程自动累加。",
+                    layer2: "第二层：个人智能管理",
+                    layer2Desc: "基于准确的里程数据，为每双鞋建立“电子档案”。核心功能包括：",
+                    features1: "<strong>寿命预测：</strong>结合官方数据、用户体重、跑步路面等因素的智能算法模型。",
+                    features2: "<strong>成本分析：</strong>直观展示“每公里成本”，让装备投入一目了然。",
+                    features3: "<strong>跑鞋日记：</strong>为每一双战靴记录难忘的时刻与赛场回忆。",
+                    features4: "<strong>履历报告：</strong>生成可视化、可分享的精美报告。",
+                    features5: "<strong>更多功能尚待开发...</strong>",
+                    layer3: "第三层：社区评价生态",
+                    layer3Desc: "这是ShoeCloud的灵魂。只有当用户真实跑过一定里程（如50公里）后，才能为这双鞋的关键指标（中底反馈、鞋面包裹、大底耐磨等）进行评价。",
+                    authenticity: "<strong>核心机制保障真实：</strong>",
+                    antiCheat1: "<strong>防刷机制：</strong>评价资格与同步的跑步数据严格绑定。",
+                    antiCheat2: "<strong>标签筛选：</strong>评价可按“跑者体重”、“跑者成绩”、“足弓类型”、“使用场景”等多维度筛选，实现极致精准的参考。",
+                    antiCheat3: "<strong>无广告环境：</strong>打造一个纯粹为跑者服务的决策平台。"
+                },
+                tech: {
+                    title: "技术<span class='highlight'>实现</span>",
+                    subtitle: "坚实、现代且合规的技术栈是体验的保障",
+                    flutter: "Flutter & Dart",
+                    flutterDesc: "跨平台移动端开发框架，保障iOS/Android双端原生级体验与高性能渲染。",
+                    python: "Python后端",
+                    pythonDesc: "负责数据处理、API代理、智能预测模型，运行于稳定的云服务器。",
+                    api: "官方API集成",
+                    apiDesc: "已正式申请并集成 <strong>Garmin Connect API</strong> 与 <strong>COROS Open API</strong>，覆盖超70%的核心跑者用户，数据同步安全、合规、稳定。其他平台如<strong>华为</strong>、<strong>苹果</strong>等，会在后续开发中逐步跟进",
+                    db: "云数据库",
+                    dbDesc: "采用关系型数据库进行结构化存储，确保用户数据安全与查询效率。",
+                    note: "技术选型遵循“稳健第一，效率优先”的原则，为产品的长期迭代打下坚实基础。"
+                },
+                future: {
+                    title: "生态<span class='highlight'>展望</span>",
+                    subtitle: "一个由可信数据驱动的、充满可能性的未来",
+                    desc: "ShoeCloud的愿景不止于一个工具。当平台上积累了大量真实、结构化的“跑鞋-跑步者-环境”数据后，将自然生长出丰富的生态：",
+                    ecosystem1: "装备发现",
+                    ecosystem1Desc: "“寻找和我体重、配速相似，且跑过相同马拉松的跑者都在穿什么鞋？”——更个性化的装备发现体验。",
+                    ecosystem2: "跑步社群",
+                    ecosystem2Desc: "组建属于自己的社群，邀请朋友加入，看看身边的大家都在穿什么跑鞋，看看他又和他的跑鞋发生了什么故事。",
+                    ecosystem3: "行业洞察",
+                    ecosystem3Desc: "匿名化的宏观数据，可为跑鞋制造商、零售商提供真实的市场反馈与产品迭代方向。",
+                    road: "我们的道路",
+                    roadDesc: "ShoeCloud将坚定不移地沿着“<strong>解决基础痛点 -> 提供个人价值 -> 构建社区生态</strong>”的路径前进。每一步都力求扎实，每一次迭代都围绕“真实”与“信任”展开。"
+                },
+                footer: {
+                    slogan: "数据驱动，科学奔跑",
+                    vision: "愿景",
+                    core: "核心功能",
+                    tech: "技术架构",
+                    privacy: "隐私政策",
+                    contact: "联系",
+                    copyright: "© 2025 ShoeCloud Project. 本页面为项目介绍页，产品正在积极开发中。"
+                }
+            }
+        };
+
+        // 初始化语言
+        function initLanguage() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'zh';
+            setLanguage(savedLang);
+        }
+
+        // 设置语言
+        function setLanguage(lang) {
+            if (!translations[lang]) return;
+            
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = getNestedTranslation(translations[lang], key);
+                
+                if (translation) {
+                    element.innerHTML = translation;
+                }
+            });
+            
+            // 更新语言按钮文本
+            document.getElementById('lang-toggle').textContent = lang === 'zh' ? 'EN' : 'ZH';
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // 获取嵌套的翻译值
+        function getNestedTranslation(obj, key) {
+            return key.split('.').reduce((o, i) => o && o[i], obj);
+        }
+
+        // 绑定语言切换事件
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+            const currentLang = localStorage.getItem('preferredLanguage') || 'zh';
+            const newLang = currentLang === 'zh' ? 'en' : 'zh';
+            setLanguage(newLang);
+        });
+
+        // 页面加载时初始化语言
+        document.addEventListener('DOMContentLoaded', initLanguage);
+    </script>
 </body>
 </html>
-
