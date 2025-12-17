@@ -125,6 +125,7 @@ body {
 .nav-links {
     display: flex;
     gap: 32px;
+    align-items: center;
 }
 .nav-links a {
     color: var(--dark-gray);
@@ -134,6 +135,21 @@ body {
 }
 .nav-links a:hover {
     color: var(--primary-green);
+}
+
+/* 语言切换按钮 */
+.lang-btn {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+.lang-btn:hover {
+    background-color: #059669;
 }
 
 /* === 主标题区域 === */
@@ -392,7 +408,7 @@ body {
         font-size: 2rem;
     }
     .nav-links {
-        gap: 20px;
+        gap: 15px;
         font-size: 0.95rem;
     }
     .content-card {
@@ -407,53 +423,10 @@ body {
     }
     .footer-links {
         justify-content: center;
+        flex-wrap: wrap;
     }
-}
-.language-switcher {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.95rem;
-    margin-left: 20px;
-}
-
-.lang-btn {
-    background: none;
-    border: none;
-    color: var(--medium-gray);
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: all 0.2s;
-    font-family: 'Inter', sans-serif;
-}
-
-.lang-btn:hover {
-    color: var(--primary-green);
-    background: var(--light-green);
-}
-
-.lang-btn.active {
-    color: var(--primary-green);
-    font-weight: 600;
-}
-
-.lang-separator {
-    color: var(--medium-gray);
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .language-switcher {
-        margin-left: 0;
-        margin-top: 10px;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
     }
 }
