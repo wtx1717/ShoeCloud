@@ -409,3 +409,51 @@ body {
         justify-content: center;
     }
 }
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--medium-gray);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.lang-btn:hover {
+    color: var(--primary-green);
+    background: var(--light-green);
+}
+
+.lang-btn.active {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.lang-separator {
+    color: var(--medium-gray);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
